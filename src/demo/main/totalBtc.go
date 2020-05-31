@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-/**
+/*
 20200531
 比特币总量
 */
