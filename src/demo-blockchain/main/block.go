@@ -50,7 +50,17 @@ func NewBlock(data string, prevBlockHash []byte) *Block {
 		Hash:       []byte{}, //先填空，后面在计算
 		Data:       []byte(data),
 	}
-	block.SetHash()
+	//block.SetHash()
+
+	//创建一个pow对象
+	pow := NewProofOfWork(&block)
+
+	//查找随机数，不停的进行hash计算
+	hash, nonce := pow.Run()
+
+	//根据挖矿结果对区块数据进行更新
+	block.Hash = hash
+	block.Nonce = nonce
 	return &block
 }
 
