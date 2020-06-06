@@ -35,6 +35,8 @@ func (pow *ProofOfWork) Run() ([]byte, uint64) {
 
 	var nonce uint64
 	block := pow.block
+	var hash [32]byte
+	fmt.Printf("开始挖矿！")
 
 	for {
 		//1.拼装数据（区块的数据，还有不断变化的随机数）
@@ -51,7 +53,7 @@ func (pow *ProofOfWork) Run() ([]byte, uint64) {
 		blockInfo := bytes.Join(tmp, []byte{})
 
 		//2.做hash计算
-		hash := sha256.Sum256(blockInfo)
+		hash = sha256.Sum256(blockInfo)
 
 		//3.与pow中target进行比较（找到退出、没找到继续，随机数+1）
 		tmpInt := big.Int{}

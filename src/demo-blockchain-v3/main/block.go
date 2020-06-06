@@ -64,6 +64,10 @@ func NewBlock(data string, prevBlockHash []byte) *Block {
 	return &block
 }
 
+func (block *Block) toByte() []byte {
+	return []byte{}
+}
+
 //3.生成hash
 func (block *Block) SetHash() {
 	//var blockInfo []byte
