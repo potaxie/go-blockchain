@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func main() {
+func main1() {
 	fmt.Printf("helloworld")
 
 	//1.打开数据库, 创建bolt数据库本地文件,strings test.db

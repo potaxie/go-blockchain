@@ -38,7 +38,6 @@ func NewBlockChian() *BlockChain {
 			if err != nil {
 				log.Panic("创建bucket(b1)失败！")
 			}
-
 			genesisblock := GenesisBlock()
 
 			//3.写数据
