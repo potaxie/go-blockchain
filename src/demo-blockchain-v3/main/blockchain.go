@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/boltdb/bolt"
 	"log"
 )
@@ -23,7 +22,7 @@ func NewBlockChian() *BlockChain {
 	//1.打开数据库, 创建bolt数据库本地文件,strings test.db
 	db, err := bolt.Open(blockChainDb, 0600, nil)
 
-	defer db.Close() //go特性
+	//defer db.Close() //go特性
 
 	if err != nil {
 		log.Panic("打开数据库失败！")
@@ -49,10 +48,9 @@ func NewBlockChian() *BlockChain {
 			lastHash = genesisblock.Hash
 
 			//这是为了读数据测试，马上删掉
-			blockBytes := bucket.Get(genesisblock.Hash)
-			block := Deserialize(blockBytes)
-
-			fmt.Printf("block info : %v\n", block)
+			//blockBytes := bucket.Get(genesisblock.Hash)
+			//block := Deserialize(blockBytes)
+			//fmt.Printf("block info : %v\n", block)
 
 		} else {
 			lastHash = bucket.Get([]byte("LastHashKey"))

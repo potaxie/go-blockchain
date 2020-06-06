@@ -68,7 +68,7 @@ func (pow *ProofOfWork) Run() ([]byte, uint64) {
 			return hash[:], nonce
 		} else {
 			//没找到，随机数+1
-			fmt.Printf("继续寻找 hash：%x,nonce:%d \n", hash, nonce)
+			//fmt.Printf("继续寻找 hash：%x,nonce:%d \n", hash, nonce)
 			nonce++
 		}
 	}
