@@ -40,7 +40,6 @@ use golang to learn blockchain
 * 定义一个工作量证明的结构proofofwork
 
 
-
 ## demo-blockchain-v3
 
 * blot数据库
