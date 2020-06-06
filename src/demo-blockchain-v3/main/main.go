@@ -18,6 +18,7 @@ func main() {
 		fmt.Printf("当区块hash值： %x\n", block.Hash)
 		fmt.Printf("当前区块数据： %s\n", block.Data)
 	}
+
 	//block := NewBlock("one perseon hava a btc", []byte{})
 	//fmt.Printf("前区块hash值： %x\n", block.PrevHash)
 	//fmt.Printf("当区块hash值： %x\n", block.Hash)
