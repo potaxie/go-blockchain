@@ -5,6 +5,7 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 	"encoding/gob"
+	"fmt"
 	"log"
 	"time"
 )
@@ -75,7 +76,7 @@ func (block *Block) Serialize() []byte {
 	encoder := gob.NewEncoder(&buffer)
 	err := encoder.Encode(&block)
 	if err != nil {
-		log.Panic("编码出错，小明不知去向")
+		log.Panic("编码出错")
 	}
 	//fmt.Printf("编码%v\n", buffer.Bytes())
 	return buffer.Bytes()
@@ -86,9 +87,9 @@ func Deserialize(data []byte) Block {
 
 	decoder := gob.NewDecoder(bytes.NewReader(data))
 	//fmt.Printf("解码 \n")
-
 	var block Block
 	//使用解码器进行解码
+	fmt.Printf("block info : %v\n", block)
 	err := decoder.Decode(&block)
 	if err != nil {
 		log.Panic("解码出错")

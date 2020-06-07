@@ -33,6 +33,7 @@ func (cli *CLI) Run() {
 	//2.分析命令
 	cmd := args[1]
 
+	//3.执行相应的动作
 	switch cmd {
 	case "addBlock":
 		fmt.Printf("添加区块\n")
@@ -52,7 +53,5 @@ func (cli *CLI) Run() {
 		fmt.Printf("无效的命令.请检查\n")
 		fmt.Printf(Usage)
 	}
-
-	//3.执行相应的动作
 
 }
