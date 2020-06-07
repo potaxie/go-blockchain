@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func (cli *CLI) AddBlock(data string) {
 	//cli.bc.AddBlock(data)
@@ -31,4 +33,15 @@ func (cli *CLI) PrintfBlockChain() {
 			break
 		}
 	}
+}
+
+func (cli *CLI) GetBalance(address string) {
+	utxos := cli.bc.FindUTXOs(address)
+
+	total := 0.0
+	for _, utxo := range utxos {
+		total += utxo.value
+	}
+	fmt.Printf("%s的余额为：%f\n", address, total)
+
 }
