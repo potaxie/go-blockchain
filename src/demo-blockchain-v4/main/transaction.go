@@ -48,7 +48,7 @@ func (tx *Transaction) SetHash() {
 }
 
 //2.提供创建交易方法（挖矿交易）
-func NewCoinBase(address string, data string) *Transaction {
+func NewCoinbaseTX(address string, data string) *Transaction {
 	//挖矿交易特点：
 	//1.只有一个input
 	//2.无需引用交易id

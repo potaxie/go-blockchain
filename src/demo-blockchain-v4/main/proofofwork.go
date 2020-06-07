@@ -47,7 +47,8 @@ func (pow *ProofOfWork) Run() ([]byte, uint64) {
 			Uint64ToByte(block.TimeStamp),
 			Uint64ToByte(block.Difficulty),
 			Uint64ToByte(nonce),
-			block.Data,
+			//只对区块头做hash。区块体通过merkel产生影响
+			//block.Data,
 		}
 		//将二维切片数组拼接起来，返回一个一维切片
 		blockInfo := bytes.Join(tmp, []byte{})

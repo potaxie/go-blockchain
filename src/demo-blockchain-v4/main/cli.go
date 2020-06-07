@@ -41,7 +41,7 @@ func (cli *CLI) Run() {
 			//a.获取数据
 			data := args[3]
 			//b.使用bc添加区块addBlock
-			cli.bc.AddBlock(data)
+			//cli.bc.AddBlock(data)
 			cli.AddBlock(data)
 		} else {
 			fmt.Printf("添加区块数据使用不当，请检查\n")

@@ -3,7 +3,7 @@ package main
 //10.重构代码 go run *.go
 func main() {
 
-	bc := NewBlockChian()
+	bc := NewBlockChian("banzhang")
 	cli := CLI{bc}
 	cli.Run()
 
