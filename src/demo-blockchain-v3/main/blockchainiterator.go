@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/boltdb/bolt"
+	"log"
 )
 
 type BlockChainIterator struct {
@@ -19,4 +20,24 @@ func (bc *BlockChain) NewIterator() *BlockChainIterator {
 		bc.tail,
 	}
 
+}
+
+//迭代器属于区块链，next方法属于迭代器
+//1.返回当前区块、2.指针前移
+func (it *BlockChainIterator) Next() *Block {
+	var block Block
+	it.db.View(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(blockBucket))
+		if bucket == nil {
+			log.Panic("迭代器遍历时bucket不应该为空,请检查！")
+		}
+		blockTmp := bucket.Get(it.currentHashPointer)
+		//解码动作
+		block = Deserialize(blockTmp)
+		//fmt.Printf("block : %v\n", block)
+		//hash左移
+		it.currentHashPointer = block.PrevHash
+		return nil
+	})
+	return &block
 }

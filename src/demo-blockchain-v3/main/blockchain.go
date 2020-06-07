@@ -73,25 +73,20 @@ func (bc *BlockChain) AddBlock(data string) {
 	lastHash := bc.tail //最后一个区块的hash
 
 	db.Update(func(tx *bolt.Tx) error {
-
 		//完成数据添加
 		bucket := tx.Bucket([]byte(blockBucket))
-
 		if bucket == nil {
 			log.Panic("不应该为空，请检查！")
 		}
-
+		//a.创建新的区块
 		block := NewBlock(data, lastHash)
+		//b.添加到区块db中
 		bucket.Put(block.Hash, block.Serialize())
 		bucket.Put([]byte("lastHashKey"), block.Hash)
-		lastHash = block.Hash //更新内存
-
-		//更新下内存中的区块链，指的是把最后的小尾巴更新一下
+		//lastHash = block.Hash //更新内存
+		//c.更新下内存中的区块链，指的是把最后的小尾巴更新一下
 		bc.tail = block.Hash
 		return nil
 	})
-
-	//a.创建新的区块
-	//b.添加到区块db中
 
 }

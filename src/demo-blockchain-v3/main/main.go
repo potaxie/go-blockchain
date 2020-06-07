@@ -1,11 +1,30 @@
 package main
 
+import "fmt"
+
 //10.重构代码 go run *.go
 func main() {
 	bc := NewBlockChian()
+	bc.AddBlock("1111111111111111")
+	bc.AddBlock("2222222222222222")
 
-	bc.AddBlock("first tx 10 btc")
-	bc.AddBlock("second tx 10 btc")
+	//创建迭代器
+	it := bc.NewIterator()
+
+	////调用迭代器，返回我们的每一个区块数据
+	for {
+		//返回区块，左移
+		block := it.Next()
+		fmt.Printf("==================================\n")
+		fmt.Printf("前区块hash值： %x\n", block.PrevHash)
+		fmt.Printf("当区块hash值： %x\n", block.Hash)
+		fmt.Printf("当前区块数据： %s\n", block.Data)
+
+		if len(block.PrevHash) == 0 {
+			fmt.Printf("区块链遍历结束")
+			break
+		}
+	}
 
 	//for i, block := range bc.blocks {
 	//	fmt.Printf("======当前区块高度： %d===========\n", i)
