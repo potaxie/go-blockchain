@@ -31,7 +31,7 @@ func NewBlockChian() *BlockChain {
 	//将要改写数据库
 	db.Update(func(tx *bolt.Tx) error {
 		//2.找到抽屉bucket，如果没有就创建
-		bucket := tx.Bucket([]byte("b1"))
+		bucket := tx.Bucket([]byte(blockBucket))
 		if bucket == nil {
 			//没有抽屉，需要创建
 			bucket, err = tx.CreateBucket([]byte(blockBucket))

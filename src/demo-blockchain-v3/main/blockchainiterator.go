@@ -13,13 +13,11 @@ type BlockChainIterator struct {
 }
 
 func (bc *BlockChain) NewIterator() *BlockChainIterator {
-
 	return &BlockChainIterator{
 		bc.db,
 		//最初指向区块链的最后一个区块，随着next的调用，不断变化
 		bc.tail,
 	}
-
 }
 
 //迭代器属于区块链，next方法属于迭代器

@@ -12,7 +12,7 @@ type Person struct {
 	Age  uint
 }
 
-func main() {
+func main2() {
 
 	//定义一个Person结构
 	var xiaoMing Person
