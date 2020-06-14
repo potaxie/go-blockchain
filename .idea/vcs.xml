@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/boltdb/bolt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/golang.org/x/crypto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/golang/x/crypto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/online-v4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/online-v5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/online-v5/lib/bolt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/v4ÕÍ’˚" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/v5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/v5/lib/bolt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/v5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/v5/lib/bolt" vcs="Git" />
+  </component>
+</project>
