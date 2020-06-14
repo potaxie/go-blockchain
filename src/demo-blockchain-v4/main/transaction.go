@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"encoding/gob"
+	"fmt"
 	"log"
 )
 
@@ -76,6 +77,44 @@ func NewCoinbaseTX(address string, data string) *Transaction {
 
 	return &tx
 
+}
+
+//创建普通的转账交易
+//1.找到最合理的utxo集合，map[string][]uint64
+//2.将这些utxo逐一转成input
+//3.创建outputs
+//4.如果有零钱，要找零
+
+func NewTransaction(from, to string, amount float64, bc *BlockChain) *Transaction {
+
+	//1.找到最合理utxo集合，map[string][]uint64
+	utxos, resValue := bc.FindNeedUTXOx(from, amount)
+
+	if resValue < amount {
+		fmt.Printf("余额不足，交易失败")
+		return nil
+	}
+
+	var inputs []TXInput
+	var outputs []TXOutput
+
+	//2.将这个utxo逐一转成inputs
+	for id, indexArray := range utxos {
+		for _, i := range indexArray {
+			input := TXInput{[]byte(id), int64(i), from}
+			inputs = append(inputs, input)
+		}
+	}
+	output := TXOutput{amount, to}
+	outputs = append(outputs, output)
+
+	if resValue > amount {
+		//找零
+		outputs = append(outputs, TXOutput{resValue - amount, from})
+	}
+	tx := Transaction{[]byte{}, inputs, outputs}
+	tx.SetHash()
+	return &tx
 }
 
 //3.创建挖矿交易

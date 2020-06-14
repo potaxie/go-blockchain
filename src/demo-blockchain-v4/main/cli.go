@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
 )
 
 //这是一个用来接受命令行参数，并且控制区块链操作的文件
@@ -16,6 +17,7 @@ const Usage = `
 	printChain			 "正向打印区块链"
 	printChainR			 "反向打印区块链"
 	getBalance --address ADDRESS "获取指定地址的余额"
+	send FROM TO AMOUT MINER DATA "由FROM转AMOUT给TO，由MINER挖矿，写入DATA"
 `
 
 //接受参数的动作，我们放到一个函数中
@@ -59,6 +61,21 @@ func (cli *CLI) Run() {
 			address := args[3]
 			cli.GetBalance(address)
 		}
+	case "send":
+		if len(args) != 7 {
+			fmt.Printf("参数个数错误")
+			fmt.Printf(Usage)
+			return
+		}
+		fmt.Printf("转账开始\n")
+		//	send FROM TO AMOUT MINER DATA "由FROM转AMOUT给TO，由MINER挖矿，写入DATA"
+		from := args[2]
+		to := args[3]
+		amount, _ := strconv.ParseFloat(args[4], 64)
+		miner := args[5]
+		data := args[6]
+		cli.Send(from, to, amount, miner, data)
+
 	default:
 		fmt.Printf("无效的命令.请检查\n")
 		fmt.Printf(Usage)
