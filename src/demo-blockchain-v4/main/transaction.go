@@ -29,7 +29,7 @@ type TXInput struct {
 //定义交易输出
 type TXOutput struct {
 	//转账金额
-	value float64
+	Value float64
 	//锁定脚本，我们用地址模拟
 	PubKeyHash string
 }
@@ -45,6 +45,20 @@ func (tx *Transaction) SetHash() {
 	data := buffer.Bytes()
 	hash := sha256.Sum256(data)
 	tx.TXID = hash[:]
+}
+
+//实现一个函数，判断当前的交易是否是挖矿交易
+func (tx *Transaction) IsCoinbase() bool {
+	//1.交易的input之后一个
+	if len(tx.TXInputs) == 1 {
+		input := tx.TXInputs[0]
+		//2.交易id为空
+		//3.交易的index为-1
+		if bytes.Equal(input.TXid, []byte{}) && input.Index == -1 {
+			return false
+		}
+	}
+	return true
 }
 
 //2.提供创建交易方法（挖矿交易）

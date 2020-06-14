@@ -40,7 +40,7 @@ func (cli *CLI) GetBalance(address string) {
 
 	total := 0.0
 	for _, utxo := range utxos {
-		total += utxo.value
+		total += utxo.Value
 	}
 	fmt.Printf("%s的余额为：%f\n", address, total)
 

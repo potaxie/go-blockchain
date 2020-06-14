@@ -165,6 +165,9 @@ func (bc *BlockChain) FindUTXOs(address string) []TXOutput {
 					UTXO = append(UTXO, output)
 				}
 			}
+
+			//如果当前交易是挖矿交易的话，那么不做遍历
+
 			//4.遍历input，找到自己花费过的utxo的集合(把自己消耗过的标记出来)
 			//我们定义一个map来保存消费过的output，key是这个output的交易id，value是这个交易中索引的数组
 
@@ -177,12 +180,9 @@ func (bc *BlockChain) FindUTXOs(address string) []TXOutput {
 					indexArray = append(indexArray, input.Index)
 					//map[2222]=[]int64{0}
 					//map[3333]=[]int64{0,1}
-
 				}
 			}
-
 		}
-
 		if len(block.PrevHash) == 0 {
 			break
 			fmt.Printf("区块遍历退出")
