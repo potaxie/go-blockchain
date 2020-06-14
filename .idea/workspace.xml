@@ -27,61 +27,9 @@
       <change afterPath="$PROJECT_DIR$/src/github.com/ripemd160/ripemd160block.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/online-v4/block" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/online-v4/blockChain.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/online-v5/wallet.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/boltdb/bolt/bolt_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/boltdb/bolt/bolt_windows.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/autocert/autocert.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/autocert/autocert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/autocert/listener.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/autocert/listener.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/http_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/version_go112.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/acme/version_go112.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/bcrypt/bcrypt.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/bcrypt/bcrypt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/blake2s/blake2s.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/blake2s/blake2s.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/blowfish/cipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/blowfish/cipher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/bn256/bn256.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/bn256/bn256.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/cast5/cast5.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/cast5/cast5.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/chacha20/chacha_generic.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/chacha20/chacha_generic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/chacha20poly1305/chacha20poly1305.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/chacha20poly1305/chacha20poly1305.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/cryptobyte/asn1/asn1.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/cryptobyte/asn1/asn1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/cryptobyte/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/cryptobyte/string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/curve25519/curve25519.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/curve25519/curve25519.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/hkdf/hkdf.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/hkdf/hkdf.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/subtle/aliasing.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/subtle/aliasing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/subtle/aliasing_appengine.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/subtle/aliasing_appengine.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/wycheproof/dsa_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/internal/wycheproof/dsa_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/md4/md4.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/md4/md4.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/nacl/box/box.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/nacl/box/box.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/nacl/secretbox/secretbox.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/nacl/secretbox/secretbox.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ocsp/ocsp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ocsp/ocsp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/armor/armor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/armor/armor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/clearsign/clearsign.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/clearsign/clearsign.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/elgamal/elgamal.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/elgamal/elgamal.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/errors/errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/keys_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/keys_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/packet/packet.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/packet/packet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/read.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/read.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/s2k/s2k.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/s2k/s2k.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/s2k/s2k_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/openpgp/s2k/s2k_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/otr/otr.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/otr/otr.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/pbkdf2/pbkdf2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/pbkdf2/pbkdf2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/poly1305/poly1305.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/poly1305/poly1305.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ripemd160/ripemd160.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ripemd160/ripemd160.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/salsa20/salsa/hsalsa20.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/salsa20/salsa/hsalsa20.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/salsa20/salsa20.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/salsa20/salsa20.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/scrypt/scrypt.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/scrypt/scrypt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/sha3/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/sha3/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/agent/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/agent/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/client_auth_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/client_auth_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/handshake_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/handshake_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/mux_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/mux_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/session_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/session_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/terminal/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/terminal/util.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/terminal/util_solaris.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/terminal/util_solaris.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/test/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/test/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/testdata/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/ssh/testdata/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/tea/cipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/tea/cipher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/twofish/twofish.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/twofish/twofish.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/xtea/cipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/xtea/cipher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/golang.org/x/crypto/xts/xts.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/crypto/xts/xts.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/online-v5/block.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/online-v5/blockchain.go" afterDir="false" />
@@ -168,18 +116,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/online-v4/main" />
+      <recent name="$PROJECT_DIR$/src/online-v4" />
+      <recent name="$PROJECT_DIR$/src/demo-blockchain-v4/main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/github.com" />
       <recent name="$PROJECT_DIR$/src/online-v4" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/demo-blockchain" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/online-v4/main" />
-      <recent name="$PROJECT_DIR$/src/online-v4" />
-      <recent name="$PROJECT_DIR$/src/demo-blockchain-v4/main" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go (1)">
