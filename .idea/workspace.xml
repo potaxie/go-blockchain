@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17604e23-ae6e-4d5c-866c-828ea9eac9f9" name="Default Changelist" comment="202006013-findNeedUTXO分析和实现">
-      <change afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/boltdb/bolt.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo-blockchain-v3/cmdTest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/github.com/ripemd160/ripemd160.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/github.com/ripemd160/ripemd160_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/github.com/ripemd160/ripemd160block.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/online-v4/block" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/online-v4/blockChain.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/online-v5/wallet.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/boltdb/bolt/bolt_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/boltdb/bolt/bolt_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/online-v4/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/online-v4/blockchain.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/online-v5/block.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/online-v5/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/online-v5/blockchain.go" afterDir="false" />
@@ -80,7 +77,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.13.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/online-v4" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -106,13 +103,14 @@
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/github.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/v5" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -124,6 +122,7 @@
       <recent name="$PROJECT_DIR$/src/demo-blockchain-v4/main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/v5" />
       <recent name="$PROJECT_DIR$/src/github.com" />
       <recent name="$PROJECT_DIR$/src/online-v4" />
       <recent name="$PROJECT_DIR$/src" />
